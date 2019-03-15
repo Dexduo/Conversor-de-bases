@@ -1,24 +1,24 @@
 #função de conversão apra base 10#
-def convert_to_10(num, base):
+def convert_to_10(a_ser_convertido, base_inicial):
 	valor=0
 	num_posicao=0
-	contador=len(num)-1
-	for i in range(0, len(num)):
-		if num[i]=="A":
+	contador=len(a_ser_convertido)-1
+	for i in range(0, len(a_ser_convertido)):
+		if a_ser_convertido[i]=="A":
 			num_posicao=10
-		if num[i]=="B":
+		if a_ser_convertido[i]=="B":
 			num_posicao=11
-		if num[i]=="C":
+		if a_ser_convertido[i]=="C":
 			num_posicao=12
-		if num[i]=="D":
+		if a_ser_convertido[i]=="D":
 			num_posicao=13
-		if num[i]=="E":
+		if a_ser_convertido[i]=="E":
 			num_posicao=14
-		if num[i]=="F":
+		if a_ser_convertido[i]=="F":
 			num_posicao=15
 		else:
-			num_posicao=int(num[i])
-		valor+=num_posicao*(base**contador)
+			num_posicao=int(a_ser_convertido[i])
+		valor+=num_posicao*(base_inicial**contador)
 		contador+=-1
 
 	return(valor)

@@ -12,9 +12,9 @@ while num_base_10>=base_final:
 	function.divisoes(num_base_10, base_final, num_final)
 	num_base_10=(num_base_10//base_final)
 	
-if num_base_10<base_final:
+	if num_base_10<base_final:
 	#aqui iremos organizar o numero final#
-	function.ultimo_num(num_base_10, num_final)
+		function.ultimo_num(num_base_10, num_final)
 
 for i in range(len(num_final)-1, -1, -1):
 	if i==0:
