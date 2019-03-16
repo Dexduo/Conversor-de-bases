@@ -36,7 +36,7 @@ def divisoes(num_base_10, base_final, num_final):
 		num_final.append("E")
 	if num_base_10%base_final==15:
 		num_final.append("F")
-	else:
+	if num_base_10%base_final<10:
 		num_final.append(num_base_10%base_final)
 	return num_final
 
@@ -53,6 +53,6 @@ def ultimo_num(num_base_10, num_final):
 		num_final.append("E")
 	if num_base_10==15:
 		num_final.append("F")
-	else:
+	if num_base_10<10:
 		num_final.append(num_base_10)
 	return num_final
